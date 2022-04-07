@@ -687,7 +687,7 @@ services:
       networks:
         - backend
 
-  ### ClickHouse #############################################
+### ClickHouse #############################################
     clickhouse:
       build:
         context: ./clickhouse
@@ -718,7 +718,7 @@ services:
 #        - frontend
         - backend
 
-  ### Redis ################################################
+### Redis ################################################
     redis:
       build: ./redis
       volumes:
