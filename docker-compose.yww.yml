@@ -577,6 +577,7 @@ services:
       volumes:
         - './logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml'
         - './logstash/pipeline:/usr/share/logstash/pipeline'
+        - ${DATA_PATH_HOST}/mariadb/:/var/log/workspace/mariadb/
       ports:
         - '5001:5001'
       environment:
@@ -628,6 +629,7 @@ services:
         - 20000:9000
       networks:
         - backend
+      restart: always
 
 ### REDISWEBUI ################################################
     redis-webui:

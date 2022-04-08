@@ -8,5 +8,6 @@ ADD ./pipeline/ /usr/share/logstash/pipeline/
 ADD ./config/ /usr/share/logstash/config/
 
 # RUN logstash-plugin install logstash-input-jdbc
+RUN logstash-plugin install logstash-filter-multiline
 RUN logstash-plugin install logstash-input-beats
 
