@@ -535,6 +535,9 @@ services:
         - backend
 
 ### ElasticSearch ########################################
+# copy .wslconfig
+# wsl --shutdown
+# wsl -l -v  // for check
     elasticsearch:
       build:
         context: ./elasticsearch

@@ -1,0 +1,3 @@
+docker start workspace_mariadb_1
+docker start workspace_redis_1
+docker start workspace_mongo_1
